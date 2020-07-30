@@ -1,0 +1,24 @@
+project xtechnical 
+  : usage-requirements
+    <include>include
+  : requirements
+    <include>include
+;
+import testing ;
+
+unit-test least_square_method : ./code_blocks/checking_least_square_method/main.cpp ;
+unit-test min_max : ./code_blocks/check_min_max/main.cpp ;
+unit-test  sma : ./code_blocks/check_sma/main.cpp ;
+unit-test zscore : ./code_blocks/check_zscore/main.cpp ;
+unit-test statistics : ./code_blocks/checking_statistics/main.cpp ;
+unit-test circular_buffer : ./code_blocks/checking_circular_buffer/main.cpp ;
+unit-test sum : ./code_blocks/check_sum/main.cpp ;
+unit-test fft : ./code_blocks/check_fft/main.cpp ;
+unit-test delay_line : ./code_blocks/check_delay_line/main.cpp ;
+unit-test indicators : ./code_blocks/check_indicators/main.cpp ;
+unit-test min_max_difference : ./code_blocks/check_min_max_difference/main.cpp ;
+unit-test statistical_indicators : ./code_blocks/checking_statistical_indicators/main.cpp ;
+unit-test normalization : ./code_blocks/checking_normalization/main.cpp ;
+
+# for sma capture output
+#run-output sma.out : sma ;
